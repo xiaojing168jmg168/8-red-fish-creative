@@ -12,3 +12,12 @@ create div/rating
 style div.rating, span and last span
 create product component
 use Rating component
+
+# Build Product Screen
+Install react-router-dom
+Use BrowswerRouter and Route for Home Screen
+Create HomeScreen.js
+Add product list code there
+Create ProductScreen.js
+Add new Route from product details to App.js
+Create 3 columns for product image, info and action
