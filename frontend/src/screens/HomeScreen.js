@@ -1,7 +1,10 @@
 import React, { useEffect, useReducer, useState } from 'react';
 import Product from '../components/Product';
 import axios from 'axios';
-import logger from 'use-reducer-logger';
+// import logger from 'use-reducer-logger';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import { Helmet } from 'react-helmet-async';
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -18,7 +21,7 @@ const reducer = (state, action) => {
 
 export default function HomeScreen() {
 
-  const [{ loading, error, products }, dispatch] = useReducer(logger(reducer), {
+  const [{ loading, error, products }, dispatch] = useReducer(reducer, {
     products: [],
     loading: true,
     error: '',
@@ -38,15 +41,24 @@ export default function HomeScreen() {
 
   return (
     <div>
+      <Helmet>
+        <title>8 Red Fish Creative</title>
+      </Helmet>
       <h1>Featured Products</h1>
       <div className="products">
         {loading ? (
           <div>loading...</div>
         ) : error ? (
           <div>{error}</div>
-        ) : (products.map((product) => (
-          <Product key={product.slug} product={product}></Product>
-        )))}
+        ) : (
+          <Row>
+          {products.map((product) => (
+            <Col key={product.slug} sm={6} md={4} lg={3} className="mb-3">
+          <Product product={product}></Product>
+          </Col>
+        ))}
+        </Row>
+        )}
 
       </div>
     </div>
