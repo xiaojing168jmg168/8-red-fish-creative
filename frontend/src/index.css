@@ -28,6 +28,12 @@ body {
 header {
   grid-area: header;
   background-color: #203040;
+  padding:1rem;
+}
+header a{
+color: #ffffff;
+font-weight: bold;
+text-decoration: none;
 }
 main {
   grid-area: main;
@@ -37,6 +43,24 @@ footer {
   grid-area: footer;
   background-color: #203040;
   color: #ffffff;
+}
+
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product{
+  border: 1px #404040 solid;
+  margin: 1rem;
+}
+.product img{
+  width: 100%;
+  max-width: 400px;
+}
+
+.product-info{
+  padding: 1rem;
 }
 /* Common */
 h1{
