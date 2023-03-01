@@ -44,3 +44,9 @@
 # Add bootstrap UI Framework
 1. npm install react-bootstrap bootstrap
 2. update App.js
+
+# Create Loading and Message Component
+1. create loading component
+2. use spinner component
+3. craete message component
+4. create utils.js to define getError fuction
