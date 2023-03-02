@@ -8,6 +8,7 @@ import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Store } from './Store';
+import CartScreen from './screens/CartScreen';
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
       <Container>
       <Routes>
       <Route path="/product/:slug" element={<ProductScreen/>}></Route>
+      <Route path="/cart" element={<CartScreen/>}></Route>
       <Route path="/" element={<HomeScreen/>}></Route>
       </Routes>
       </Container>

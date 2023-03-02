@@ -186,3 +186,6 @@ img.large{
 .error{
   color: #a02020;
 }
+.img-thumbnail{
+  height: 80px;
+}

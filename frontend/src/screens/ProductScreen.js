@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useReducer } from 'react'
 
 import Rating from '../components/Rating';
 
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import axios from 'axios';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -32,6 +32,7 @@ const reducer = (state, action) => {
     }
 };
 function ProductScreen() {
+    const navigator = useNavigate();
     const params = useParams();
     const { slug } = params;
 
@@ -67,6 +68,7 @@ function ProductScreen() {
             type:'CART_ADD_ITEM',
             payload: { ...product, quantity }
         });
+        navigator('/cart');
     }
 
 
