@@ -35,6 +35,9 @@ color: #ffffff;
 font-weight: bold;
 text-decoration: none;
 }
+.nav a:hover{
+  color:#ff8000;
+}
 .site-container{
   min-height: 100vh;
 }
@@ -188,4 +191,7 @@ img.large{
 }
 .img-thumbnail{
   height: 80px;
+}
+.small-container{
+  max-width: 600px;
 }
