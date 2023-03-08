@@ -84,7 +84,16 @@
 
 # Seed Sample Data
 1. create Product model
-2. create User model
-3. Create seed route
-4. use route in server.js
-5. seed sample product
+2. Create seed route
+3. use route in server.js
+4. seed sample product
+
+# Seed Sample Users
+1. create user model
+2. seed sample users
+3. create user routes
+
+# Create Signin Backend API
+1. create signin api
+2. npm install jsonwebtoken
+3. define generateToken
