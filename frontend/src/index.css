@@ -25,19 +25,20 @@ body {
   grid-template-rows: 5rem 1fr 5rem;
   height: 100%;
 }
-.nav {
+/* .nav {
   grid-area: header;
   background-color: #203040;
   padding:1rem;
 }
 .nav a{
+font-size: large;
 color: #ffffff;
-font-weight: bold;
 text-decoration: none;
 }
 .nav a:hover{
   color:#ff8000;
-}
+} */
+
 .site-container{
   min-height: 100vh;
 }
@@ -194,4 +195,9 @@ img.large{
 }
 .small-container{
   max-width: 600px;
+}
+
+.dropdown{
+  color: #000000;
+  font-size: 1rem;
 }
