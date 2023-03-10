@@ -48,12 +48,12 @@ export default function SigninScreen() {
        <h1 className='my-3'>Sign In</h1>
        <Form onSubmit={submitHandler}>
         <Form.Group className="mb-3" controlId="email">
-            {/* <Form.Lable>Email</Form.Lable> */}
-            <Form.Control type="email" placeholder="Email" required onChange={(e) => setEmail(e.target.value)} />
+            <Form.Label>Email</Form.Label>
+            <Form.Control type="email" required onChange={(e) => setEmail(e.target.value)} />
         </Form.Group>
         <Form.Group className="mb-3" controlId="password">
-            {/* <Form.Lable>Password</Form.Lable> */}
-            <Form.Control type="password" placeholder="Password" required onChange={(e) => setPassword(e.target.value)} />
+            <Form.Label>Password</Form.Label>
+            <Form.Control type="password" required onChange={(e) => setPassword(e.target.value)} />
         </Form.Group>
         <div className='mb-3'>
             <Button type="submit">Sign In</Button>
