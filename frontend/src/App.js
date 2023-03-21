@@ -18,6 +18,7 @@ import ShippingAddressScreen from './screens/ShippingAddressScreen';
 import PaymentMethodScreen from './screens/PaymentMethodScreen';
 import PlaceOrderScreen from './screens/PlaceOrderScreen';
 import OrderScreen from './screens/OrderScreen';
+import OrderHistoryScreen from './screens/OrderHistoryScreen';
 
 
 function App() {
@@ -39,9 +40,11 @@ function App() {
         <Navbar bg="dark" variant="dark" expand="lg">
           <Container className='mt-3'>
             <LinkContainer to="/">
-              <Navbar.Brand className='nav-brand'>8 Red Fish Creative</Navbar.Brand>
+              <Navbar.Brand className='nav-brand'><h1>8 Red Fish Creative</h1></Navbar.Brand>
             </LinkContainer>
-            <Nav className="me-auto">
+            <Navbar.Toggle aria-controls='basic-navbar-nav' />
+            <Navbar.Collapse id='basic-navbar-nav'>
+            <Nav className="me-auto w-100 justify-content-end">
               <Link to="/cart" className='nav-link'>
                 Cart
                 {cart.cartItems.length > 0 && (
@@ -73,6 +76,7 @@ function App() {
                   </Link>
                 )}
             </Nav>
+            </Navbar.Collapse>
           </Container>
         </Navbar>
       </header>
@@ -87,6 +91,7 @@ function App() {
       <Route path="/payment" element={<PaymentMethodScreen />}></Route>
       <Route path="/placeorder" element={<PlaceOrderScreen />}></Route>
       <Route path="/order/:id" element={<OrderScreen />}></Route>
+      <Route path="/orderhistory" element={<OrderHistoryScreen />}></Route>
       <Route path="/" element={<HomeScreen/>}></Route>
       </Routes>
       </Container>
