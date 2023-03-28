@@ -1,1 +1,21 @@
-{}
+{
+  "name": "8-red-fish-creative",
+  "version": "1.0.0",
+  "description": "Build a massive E-commerce app with React, Context, Node, Express, MongoDB, Mongoose",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd backend && npm install && cd ../frontend && npm install && npm run build",
+    "start": "node backend/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaojing168jmg168/8-red-fish-creative.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiaojing168jmg168/8-red-fish-creative/issues"
+  },
+  "homepage": "https://github.com/xiaojing168jmg168/8-red-fish-creative#readme"
+}
