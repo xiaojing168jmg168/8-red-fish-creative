@@ -24,7 +24,7 @@ productRouter.post(
       brand: 'sample brand',
       countInStock: 0,
       rating: 0,
-      size: '20 X 30',
+      size: '20 X 30 inches',
       numReviews: 0,
       description: 'sample description',
     });
