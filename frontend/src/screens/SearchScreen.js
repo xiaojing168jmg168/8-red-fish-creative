@@ -263,7 +263,10 @@ export default function SearchScreen() {
                   <Link
                     key={x + 1}
                     className="mx-1"
-                    to={getFilterUrl({ page: x + 1 })}
+                    to={{
+                      pathname: '/search',
+                      search: getFilterUrl({ page: x + 1 }).substring(7),
+                    }}
                   >
                     <Button
                       className={Number(page) === x + 1 ? 'text-bold' : ''}

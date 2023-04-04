@@ -135,7 +135,7 @@ function App() {
                 <LinkContainer
                   to={{
                     pathname: '/search',
-                    search: `category=${category}`,
+                    search: `?category=${category}`,
                   }}
                   onClick={() => setSidebarIsOpen(false)}
                 >
