@@ -217,3 +217,8 @@
 1. create edit button
 2. create edit product ui
 3. dispaly product info in the input boxes
+
+# Implement Update product
+
+1. create edit product backend api
+2. handle update click
