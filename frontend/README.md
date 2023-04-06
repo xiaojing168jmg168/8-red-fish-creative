@@ -222,3 +222,9 @@
 
 1. create edit product backend api
 2. handle update click
+
+# Delete Product
+
+1. show delete button
+2. implement backend api
+3. handle on click
