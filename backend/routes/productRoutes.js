@@ -19,6 +19,7 @@ productRouter.post(
       name: 'sample name ' + Date.now(),
       slug: 'sample-name-' + Date.now(),
       image: '/images/p1.jpg',
+      size: '18 X 24 inches',
       price: 0,
       category: 'sample category',
       brand: 'sample brand',
@@ -44,7 +45,7 @@ productRouter.put(
       product.slug = req.body.slug;
       product.price = req.body.price;
       product.image = req.body.image;
-      product.images = req.body.images;
+      product.size = req.body.size;
       product.category = req.body.category;
       product.brand = req.body.brand;
       product.countInStock = req.body.countInStock;
