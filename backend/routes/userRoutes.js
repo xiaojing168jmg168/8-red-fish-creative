@@ -2,10 +2,19 @@ import express from 'express';
 import bcrypt from 'bcryptjs';
 import expressAsyncHandler from 'express-async-handler';
 import User from '../models/userModel.js';
-import { isAuth, generateToken } from '../utils.js';
-
+import { isAuth, isAdmin, generateToken } from '../utils.js';
 
 const userRouter = express.Router();
+
+userRouter.get(
+  '/',
+  isAuth,
+  isAdmin,
+  expressAsyncHandler(async (req, res) => {
+    const users = await User.find({});
+    res.send(users);
+  })
+);
 
 userRouter.post(
   '/signin',
@@ -29,7 +38,7 @@ userRouter.post(
 
 userRouter.post(
   '/signup',
-  expressAsyncHandler(async (req, res) =>{
+  expressAsyncHandler(async (req, res) => {
     const newUser = new User({
       name: req.body.name,
       email: req.body.email,
