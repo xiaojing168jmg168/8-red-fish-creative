@@ -45,6 +45,7 @@ productRouter.put(
       product.slug = req.body.slug;
       product.price = req.body.price;
       product.image = req.body.image;
+      product.images = req.body.images;
       product.size = req.body.size;
       product.category = req.body.category;
       product.brand = req.body.brand;
