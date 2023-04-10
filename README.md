@@ -44,6 +44,10 @@
 
 ![screenshot](frontend/public/images/checkout.png)
 
+## Review Rating, Comment
+
+![screenshot](frontend/public/images/review-comment.png)
+
 ## Order List
 
 ![screenshot](frontend/public/images/orders.png)
